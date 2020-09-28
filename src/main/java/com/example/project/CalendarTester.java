@@ -7,8 +7,68 @@ public class CalendarTester {
     public static void main(String[] args) {
 
 
+
+
         //This constructs a GregorianCalendar object
         GregorianCalendar myCal = new GregorianCalendar();
+        int dayofMonth = myCal.get(Calendar.DAY_OF_MONTH);
+        int month = myCal.get(Calendar.MONTH);
+        int year = myCal.get(Calendar.YEAR);
+        int weekday = myCal.get(Calendar.DAY_OF_WEEK);
+       // System.out.println(dayofMonth);
+       // System.out.println(month);
+        // System.out.println(year);
+        // System.out.println(weekday);
+
+        System.out.print("Current Date is: "+month+"/" );
+        System.out.print( dayofMonth+"/" );
+        System.out.println( year);
+
+       myCal.add(Calendar.DAY_OF_WEEK,100);
+       myCal.add(Calendar.MONTH,100);
+        myCal.add(Calendar.DAY_OF_MONTH,100);
+
+
+
+       System.out.print("day: "+Calendar.DAY_OF_WEEK+" ");
+       System.out.print("Date in 100 days: "+Calendar.MONTH+"/");
+       System.out.print(Calendar.DAY_OF_MONTH+"/");
+       System.out.println( year);
+
+
+
+       myCal.add(Calendar.DAY_OF_WEEK,324);
+        dayofMonth = myCal.get(Calendar.DAY_OF_MONTH);
+        month = myCal.get(Calendar.MONTH);
+        year = myCal.get(Calendar.YEAR);
+        weekday = myCal.get(Calendar.DAY_OF_WEEK);
+
+        System.out.println("day of birthday is  "+weekday);
+
+
+
+        myCal.add(Calendar.DAY_OF_WEEK,10000);
+        myCal.add(Calendar.MONTH,10000);
+        myCal.add(Calendar.DAY_OF_MONTH,10000);
+
+        dayofMonth = myCal.get(Calendar.DAY_OF_MONTH);
+        month = myCal.get(Calendar.MONTH);
+        year = myCal.get(Calendar.YEAR);
+        weekday = myCal.get(Calendar.DAY_OF_WEEK);
+
+        System.out.print("day: "+weekday+" ");
+        System.out.print("Date in 10000 days: "+month+"/");
+        System.out.print(dayofMonth+"/");
+        System.out.println( year);
+
+
+
+
+
+
+
+
+
 
 
         /* You can use constants with the GregorianCalendar class to refer to its various
