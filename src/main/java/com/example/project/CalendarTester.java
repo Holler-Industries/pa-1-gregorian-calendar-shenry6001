@@ -15,6 +15,7 @@ public class CalendarTester {
         int month = myCal.get(Calendar.MONTH);
         int year = myCal.get(Calendar.YEAR);
         int weekday = myCal.get(Calendar.DAY_OF_WEEK);
+        month = month+1;
        // System.out.println(dayofMonth);
        // System.out.println(month);
         // System.out.println(year);
@@ -27,11 +28,12 @@ public class CalendarTester {
        myCal.add(Calendar.DAY_OF_WEEK,100);
        myCal.add(Calendar.MONTH,100);
         myCal.add(Calendar.DAY_OF_MONTH,100);
+        month=Calendar.MONTH+1;
 
 
 
        System.out.print("day: "+Calendar.DAY_OF_WEEK+" ");
-       System.out.print("Date in 100 days: "+Calendar.MONTH+"/");
+       System.out.print("Date in 100 days: "+month+"/");
        System.out.print(Calendar.DAY_OF_MONTH+"/");
        System.out.println( year);
 
@@ -47,14 +49,19 @@ public class CalendarTester {
 
 
 
+
         myCal.add(Calendar.DAY_OF_WEEK,10000);
         myCal.add(Calendar.MONTH,10000);
         myCal.add(Calendar.DAY_OF_MONTH,10000);
 
+
+
         dayofMonth = myCal.get(Calendar.DAY_OF_MONTH);
-        month = myCal.get(Calendar.MONTH);
+        month = myCal.get(Calendar.MONTH)+1;
         year = myCal.get(Calendar.YEAR);
         weekday = myCal.get(Calendar.DAY_OF_WEEK);
+
+
 
         System.out.print("day: "+weekday+" ");
         System.out.print("Date in 10000 days: "+month+"/");
